@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Tilt+Prism&family=Titillium+Web:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+@layer utilities {
+
+    .prismText {
+        font-family: 'Tilt Prism', cursive;
+    }
+
+    .techText {
+        font-family: 'Share Tech Mono', monospace;
+    }
+
+    .mainText {
+        font-family: 'Titillium Web', sans-serif;
+    }
+}
