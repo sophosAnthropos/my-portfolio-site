@@ -10,6 +10,7 @@ export const App = (): JSX.Element => {
     <div
         className={`
             bg-gradient-to-tr from-yellow-600 to-violet-600
+            sm:appContainerDesktop
         `}
     >
       <Routes>

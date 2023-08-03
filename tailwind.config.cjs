@@ -5,9 +5,12 @@ export default {
     extend: {
         backgroundImage: {
           'projectsButton': "url('./src/assets/Images/SiteForBG.jpg')",
+
           'contactButton': "url('./src/assets/Images/emailBG.jpg')",
-          'portraitBG': "url('./src/assets/Images/backgroundPortrait.png')",
-          'landscapeBG': "url('./src/assets/Images/backgroundLandscape.png')",
+
+          'portraitBG': "url('./src/assets/Images/00_backgroundPortrait.png')",
+
+          'landscapeBG': "url('./src/assets/Images/backgroundLandscapeSmaller.png')",
         }
     },
   },

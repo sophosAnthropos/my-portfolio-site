@@ -23,3 +23,84 @@
         font-family: 'Titillium Web', sans-serif;
     }
 }
+
+@layer components {
+
+    .appContainerDesktop {
+        width: clamp(1000px, 100vw, 1920px);
+    }
+
+    .landingContainerDesktop {
+        width: clamp(1000px, 100%, 1920px);
+    }
+
+
+    /* Name, Site Logo, and Professional Title */
+
+    .nameTextDesktop {
+        font-size: clamp(2.3rem, 3.7vw, 3.5rem);
+    }
+
+    .logoContainerDesktop {
+        width: clamp(350px, 30vw, 500px);
+    }
+
+    .logoDesktop {
+        width: clamp(350px, 30vw, 450px);
+        height: clamp(150px, 13.2vw, 183px);
+    }
+
+    .titleTextDesktop {
+        font-size: clamp(1.6rem, 2.4vw, 2.4rem);
+    }
+
+
+    /* Github, Linkdin, Resume links on Landing Page */
+
+    .linksContainerDesktop {
+        border: dashed 2px;
+        width: clamp(250px, 25vw, 335px);
+    }
+
+    .githubLogoDesktop {
+        width: clamp(35px, 3.5vw, 45px);
+    }
+
+    .linkdinLogoDesktop {
+        width: clamp(35px, 3.5vw, 45px);
+    }
+
+    .resumeLogoDesktop {
+        width: clamp(30px, 3.0vw, 40px);
+    }
+
+    .linksTextDesktop {
+        font-size: clamp(1.25rem, 2vw, 1.5rem);
+    }
+
+
+    /* Projects and Contact buttons */
+
+    .navContainerDesktop {
+        width: clamp(1000px, 100%, 1375px);
+    }
+
+    .navBtnContainerDesktop {
+        width: clamp(333px, 33vw, 415px);
+    }
+
+    .navBtnTextDesktop {
+        font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+    }
+
+    .navBtnProjectImgDesktop {
+        width: clamp(131.6px, 12.5vw, 165px);
+        height: initial;
+    }
+
+    .navBtnContactImgDesktop {
+        width: clamp(120px, 12vw, 155px);
+        height: initial;
+    }
+
+}
