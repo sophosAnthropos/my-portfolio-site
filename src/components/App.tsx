@@ -10,7 +10,7 @@ import backgroundDesktop from '../assets/Images/backgroundLandscape_V2.png'
 
 export const App = (): JSX.Element => {
 
-    const {width, height} = useWindowResize()
+    const {width, } = useWindowResize()
     const [background, setBackground] = useState(<></>)
   
 

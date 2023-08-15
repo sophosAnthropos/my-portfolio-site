@@ -11,7 +11,7 @@ import { OpenAboutMeBtn } from "../01_Home_Components/04_About_Me_Button";
 
 export const Home = (): JSX.Element => {
 
-    const {width, height} = useWindowResize()
+    const {width, } = useWindowResize()
     const [nameLogoComponent, setNameLogoComponent] = useState(<></>)
 
     useEffect(() => {
