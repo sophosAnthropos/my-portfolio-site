@@ -3,7 +3,7 @@ export const MyTitle = (): JSX.Element => {
     return (
         <section
             className={`
-                h-[12%] flex items-start
+                w-full h-[20%] flex items-start
             `}
         >
             <h2

@@ -7,14 +7,14 @@ export const NavButtons = (): JSX.Element => {
     return (
         <section
                     className={`
-                        h-[38%] flex justify-around items-center text-2xl text-neutral-950 mainText font-bold
+                        h-[30%] flex justify-around items-center text-2xl text-neutral-950 mainText font-bold
 
                         sm:navContainerDesktop sm:navBtnTextDesktop sm:justify-evenly
                     `}
                 >
                     <div
                         className={`
-                            w-2/5 h-2/3 flex items-end justify-center
+                            w-2/5 h-4/5 flex items-center justify-center
 
                             sm:navBtnContainerDesktop
                         `}
@@ -58,7 +58,7 @@ export const NavButtons = (): JSX.Element => {
 
                     <div
                         className={`
-                            w-2/5 h-2/3 flex items-end justify-center
+                            w-2/5 h-4/5 flex items-center justify-center
 
                             sm:navBtnContainerDesktop
                         `}

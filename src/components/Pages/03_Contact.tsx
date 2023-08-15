@@ -1,30 +1,30 @@
 import { NavBar } from "../00_Resuable_Components/01_Nav"
+import { TheForm } from "../03_Contact_Components/01_Contact_Form"
 
 export const Contact = (): JSX.Element => {
 
     return (
         <main 
             className={`
-                h-[100vmax] relative
+                w-full h-[100vmax] relative z-[400]
                     
-                sm:landingContainerDesktop sm:h-[100vh] sm:bg-landscapeBG sm:bg-fixed sm:flex sm:flex-col sm:justify-center sm:items-center
+                sm:landingContainerDesktop sm:h-[100vh] sm:flex sm:flex-col sm:justify-start sm:items-center
             `}
         >
             
             <NavBar link2='/Projects' />
 
-            <div
+            <section
                 className={`
-                    
+                    w-full h-[96.5%]
+                    flex items-end
+                    sm:h-[94%] sm:flex sm:justify-center sm:items-end
                 `}
             >
-                <section>
 
-                </section>
-                <section>
+                <TheForm />
 
-                </section>
-            </div>
+            </section>
 
         </main>
     )

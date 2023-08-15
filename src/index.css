@@ -46,8 +46,8 @@
     }
 
     .logoDesktop {
-        width: clamp(350px, 30vw, 450px);
-        height: clamp(150px, 13.2vw, 183px);
+        aspect-ratio: auto;
+        width: clamp(350px, 30vw, 400px);
     }
 
     .titleTextDesktop {
@@ -79,10 +79,11 @@
     }
 
 
-    /* Projects and Contact buttons */
+    /* Projects and Contact buttons for home page */
 
     .navContainerDesktop {
         width: clamp(1000px, 100%, 1375px);
+        height: clamp(220px, 21vmax, 310px);
     }
 
     .navBtnContainerDesktop {
@@ -90,7 +91,7 @@
     }
 
     .navBtnTextDesktop {
-        font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+        font-size: clamp(1.7rem, 2.7vw, 2.2rem);
     }
 
     .navBtnProjectImgDesktop {
@@ -103,4 +104,130 @@
         height: initial;
     }
 
+
+    /* About Me */
+    .aboutMeSectionDesktop {
+        width: 550px;
+    }
+    
+    .aboutMeParagraphMobile {
+        height: clamp(165px, 45%, 200px);
+    }
+
+    .aboutMeTextMobile {
+        font-size: clamp(0.75rem, 1.8vh, 1rem);
+    }
+
+
+    /* Nav Bar on other pages */
+    .navBarHeightMobile {
+        height: clamp(100px, 15%, 125px);
+    }
+
+    .homeLinkContainerDesktop {
+        width: clamp(245px, 25%, 335px);
+    }
+
+    .homeLinkLogoDesktop {
+        width: clamp(150px, 60%, 200px);
+    }
+
+    .navItemImageProjects {
+        height: clamp(70px, 6vmax, 90px);
+    }
+
+    .navItemImageContact {
+        height: clamp(90px, 7.5vmax, 120px);
+    }
+
+    .navItemText {
+        font-size: clamp(1.4rem, 2vw, 1.7rem);
+    }
+
+    .linksSectionWrapper {
+        width: clamp(310px, 30%, 375px);
+    }
+
+    .allLinksContainer {
+        width: clamp(290px, 95%, 345px);
+        height: clamp(92px, 9vmax, 115px);
+    }
+
+    .linkContainer {
+        width: clamp(90px, 33%, 115px);
+    }
+
+    .linksLogosDesktop {
+        width: clamp(30px, 33%, 42px);
+    }
+
+
+
+    /* Contact Form */
+    .firstFourInputsSizeDesktop {
+        font-size: clamp(1.2rem, 1.8vw, 1.6rem);
+    }
+
+    .textAreaInputSizeDesktop {
+        font-size: clamp(1.2rem, 1.9vw, 1.875rem);
+    }
+    
+    .inputTextColorEffect {
+        color: #ecfeff;
+        text-shadow: #56f1ff 1px 0 10px;
+    }
+
+    .inputPlaceholderColorEffect {
+        color: #ecfeff;
+        text-shadow: none;
+    }
+
+    .inputPlaceholderRequiredColor {
+        color: #ffdcdc;
+        text-shadow: red 1px 0 10px;
+    }
+
+    .allInputFields {
+        color: #ecfeff;
+        font-weight: bold;
+        letter-spacing: 0.05rem;
+        font-size: clamp(1.2rem, 2.6vh, 1.5rem);
+
+        @apply w-[95%]
+        bg-transparent outline-none border-b-[3px] border-slate-400
+        inputTextColorEffect
+        sm:focus:bg-neutral-700 sm:focus:border-none 
+        sm:focus:rounded-md sm:focus:inputTextColorEffect
+        
+    }
+
+    .firstFourInputs {
+        @apply h-[65%] row-span-1 pl-2
+        sm:w-[75%] sm:h-[27%] sm:col-span-2 sm:pl-0
+        sm:firstFourInputsSizeDesktop sm:focus:pl-2 
+    }
+
+    .submitButtonBorderEffect {
+        box-shadow: #93f6ff 1px 0 10px 2px, inset #93f6ff 1px 0 8px 1px;
+    }
+
+    .submitButtonActiveEffect {
+        @apply  
+        active:scale-[.80] active:inputTextColorEffect active:border-cyan-50 active:submitButtonBorderEffect
+        sm:active:scale-95
+    }
+
+    .formSubmitBtn {
+        width: clamp(140px, 13vmax, 200px);
+        height: clamp(140px, 13vmax, 200px);
+        font-size: clamp(1.65rem, 2.5vw, 2.3rem);
+
+        @apply bg-gray-400 bg-opacity-10 text-cyan-50
+        border-t-[1px] border-r-[1px] border-l-[1px] border-b-[6px] rounded-md
+    }
+
+    .formLegendWrapper {
+        width: clamp(186px, 20%, 267px);
+        font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+    }
 }

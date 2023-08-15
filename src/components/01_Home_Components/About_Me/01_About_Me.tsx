@@ -10,23 +10,23 @@ export const AboutMe = (): JSX.Element => {
     return (
         <div
             className={`
-                w-full h-full absolute z-[400] ${isOpen ? "block" : "hidden"}  
+                w-full h-full absolute z-[500] ${isOpen ? "block" : "hidden"}  
                 sm:backdrop-blur-[6px]
                 
             `}
         >
             <aside 
                 className={`
-                    w-full h-full absolute z-[500] 
+                    w-full h-full absolute z-[505] overflow-hidden
                     flex flex-col justify-end bg-yellow-500         
 
-                    sm:w-2/5 sm:left-0
+                    sm:aboutMeSectionDesktop sm:right-0
                 `}
             >
                 <img 
                     src={picOfMe} 
                     className={`
-                        w-[90%] h-[35%] absolute z-[505] top-0 left-[5%]
+                         h-[35%] absolute z-[505] top-0 left-[5%]
                     `}
                 />
                 <section
@@ -48,7 +48,7 @@ export const AboutMe = (): JSX.Element => {
                 <button
                     onClick={()=>setAboutState(false)}
                     className={`
-                        w-[8%] aspect-square absolute z-[515] top-[1%] right-[1%]
+                        w-[8%] aspect-square absolute z-[511] top-[1%] right-[1%]
                     `}
                 >
                     <img 

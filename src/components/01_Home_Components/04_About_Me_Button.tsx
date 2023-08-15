@@ -1,4 +1,4 @@
-import openAboutMe from "../../assets/Images/about_Me_Tab_V4.png"
+import openAboutMeDesktop from "../../assets/Images/about_Me_Tab_V4_Desktop.png"
 import { useContext } from "react"
 import { AboutMeStateContext } from "../../context/01_About_Me_State"
 
@@ -8,12 +8,12 @@ export const OpenAboutMeBtn = () => {
         <button
             onClick={()=>setAboutState(true)}
             className={`
-                w-[22%] h-[15%] absolute left-0 top-[55%]
-                sm:w-[9%] sm:h-[18%] sm:top-[75%]
+                w-[85px] h-[105px] absolute top-[35%] right-0 z-[410]
+                sm:w-[140px] sm:h-[18%] sm:top-[15%]
             `}
         >
             <img 
-                src={openAboutMe}
+                src={openAboutMeDesktop}
                 className={`
                     w-full h-full
                 `}

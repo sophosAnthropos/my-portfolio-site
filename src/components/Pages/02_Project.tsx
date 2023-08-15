@@ -6,9 +6,9 @@ export const Projects = (): JSX.Element => {
     return (
         <main 
             className={`
-                h-[100vmax] relative
+                w-full h-[100vmax] relative z-[400]
                     
-                sm:landingContainerDesktop sm:h-[100vh] sm:bg-landscapeBG sm:bg-fixed sm:flex sm:flex-col sm:justify-center sm:items-center
+                sm:landingContainerDesktop sm:h-[100vh] sm:flex sm:flex-col sm:justify-center sm:items-center
             `}
         >
             

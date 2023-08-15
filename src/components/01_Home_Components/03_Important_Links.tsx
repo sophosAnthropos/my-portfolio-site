@@ -8,7 +8,8 @@ export const ImportantLinks = (): JSX.Element => {
     return (
         <section 
             className={`
-                h-[17%] grid grid-cols-2 justify-items-center place-items-center text-md text-yellow-500 techText tracking-wider
+                h-[17%] grid grid-cols-2 justify-items-center place-items-center 
+                text-md text-yellow-500 techText tracking-wider
 
                 sm:flex sm:justify-center sm:items-center sm:linksTextDesktop
             `}
