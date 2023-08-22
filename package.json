@@ -3,13 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://myusername.github.io/my-app",
+  "homepage": "https://sophosanthropos.github.io/my-portfolio-site/home",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "ghp": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",
