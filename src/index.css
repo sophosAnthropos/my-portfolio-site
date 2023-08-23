@@ -12,7 +12,7 @@
 @layer base {
     .htmlAndBody {
         width: clamp(1000px, 100vw, 1920px);
-        height: 100vh;
+        height: 100%;
     }
 }
 
