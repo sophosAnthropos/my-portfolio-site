@@ -31,7 +31,7 @@ export const Home = (): JSX.Element => {
             className={`
                 w-full h-[100vmax] relative z-[400] flex flex-col justify-around
                 
-                sm:landingContainerDesktop sm:h-[100vh]  sm:flex sm:flex-col sm:justify-center sm:items-center 
+                sm:landingContainerDesktop sm:h-[100vh] sm:flex sm:flex-col sm:justify-center sm:items-center 
             `}
         >
                 <AboutMeStateContextProvider>

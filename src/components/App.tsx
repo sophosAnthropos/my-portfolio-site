@@ -44,11 +44,12 @@ export const App = (): JSX.Element => {
     return (
         <div
             className={`
-                w-full bg-gradient-to-tr from-yellow-600 to-violet-600 relative z-[300]
+                w-full h-full bg-gradient-to-tr from-yellow-600 to-violet-600 relative z-[300]
                 sm:appContainerDesktop
             `}
         >
             {background}
+            
             <Routes>
               <Route path='/' element={<Home />} />
               <Route path='/Projects' element={<Projects />} />
