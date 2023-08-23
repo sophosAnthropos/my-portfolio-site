@@ -220,7 +220,7 @@ Error generating stack: `+o.message+`
                 `})})},Fm=()=>{const{width:e}=Wc(),[t,n]=k.useState(v.jsx(v.Fragment,{}));return k.useEffect(()=>{e<640?n(v.jsx(jm,{})):n(v.jsx(Pm,{}))},[e]),v.jsxs("main",{className:`
                 w-full h-[100vmax] relative z-[400] flex flex-col justify-around
                 
-                sm:landingContainerDesktop sm:h-[100vh]  sm:flex sm:flex-col sm:justify-center sm:items-center 
+                sm:landingContainerDesktop sm:h-[100vh] sm:flex sm:flex-col sm:justify-center sm:items-center 
             `,children:[v.jsxs(Lm,{children:[v.jsx(Dm,{}),v.jsx(Bm,{})]}),v.jsxs("div",{className:`
                         w-full h-[45%] 
                         sm:h-[40%] sm:flex sm:flex-col sm:justify-around sm:items-center
@@ -375,7 +375,7 @@ Error generating stack: `+o.message+`
                     `})):n(()=>v.jsx("img",{src:Km,alt:"",className:`
                         w-full h-full absolute z-[310]
                     `}))},[e]),v.jsxs("div",{className:`
-                w-full bg-gradient-to-tr from-yellow-600 to-violet-600 relative z-[300]
+                w-full h-full bg-gradient-to-tr from-yellow-600 to-violet-600 relative z-[300]
                 sm:appContainerDesktop
             `,children:[t,v.jsxs(ym,{children:[v.jsx(Fr,{path:"/",element:v.jsx(Fm,{})}),v.jsx(Fr,{path:"/Projects",element:v.jsx(Um,{})}),v.jsx(Fr,{path:"/Contact",element:v.jsx(Hm,{})})]}),v.jsx("footer",{className:`
                     w-full h-[3.5%] absolute bottom-0 z-[420] 
