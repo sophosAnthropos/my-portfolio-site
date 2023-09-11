@@ -1,9 +1,27 @@
-
+import emailjs from '@emailjs/browser';
 
 export const TheForm = () => {
 
+    
+
+    const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_oe5ds3f', 'template_w6z6qkd', e.currentTarget, 'N7mmqqtzIxsv5zVEO')
+          .then((result) => {
+              console.log(result.text);
+              alert("Message Sent")
+            }, (error) => {
+              console.log(error.text);
+              alert("Message failed to send")
+          });
+
+          e.currentTarget.reset()
+      };
+
+
     return (
-        <form
+        <form onSubmit={sendEmail}
             className={`
                 w-full h-4/5 relative
                 grid grid-cols-1 justify-items-center
@@ -16,7 +34,7 @@ export const TheForm = () => {
             `}
         >
             
-            <input type="text" placeholder="First Name*" required
+            <input type="text" placeholder="First Name*" name="first_name"   required
                 className={`
                     allInputFields
                     placeholder:inputPlaceholderRequiredColor 
@@ -24,7 +42,7 @@ export const TheForm = () => {
                 `}
             />
 
-            <input type="text" placeholder="Last Name"
+            <input type="text" placeholder="Last Name" name="last_name" 
                 className={`
                     allInputFields
                     placeholder:inputPlaceholderColorEffect 
@@ -32,7 +50,7 @@ export const TheForm = () => {
                 `}
             />
 
-            <input type="phone" placeholder="Phone" 
+            <input type="phone" placeholder="Phone" name="sender_phone" 
                 className={`
                     allInputFields
                     placeholder:inputPlaceholderColorEffect
@@ -40,7 +58,7 @@ export const TheForm = () => {
                 `}
             />
 
-            <input type="email" placeholder="Email*" required
+            <input type="email" placeholder="Email*" name="sender_email"  required 
                 className={`
                     allInputFields
                     placeholder:inputPlaceholderRequiredColor 
@@ -48,7 +66,7 @@ export const TheForm = () => {
                 `}
             />
 
-            <textarea placeholder="Your Message*" required
+            <textarea placeholder="Your Message*" name="message"  required
                 className={`
                     allInputFields
                     placeholder:inputPlaceholderRequiredColor 

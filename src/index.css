@@ -4,6 +4,26 @@
 @tailwind utilities;
 
 
+::-webkit-scrollbar {
+    background: black;
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: #333;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: orangered;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
 *, *::after, *::before {
     box-sizing: border-box;
     margin: 0;
@@ -11,9 +31,11 @@
 
 @layer base {
     .htmlAndBody {
-        width: clamp(1000px, 100vw, 1920px);
+        width: clamp(1000px, 100%, 1920px);
         height: 100%;
     }
+
+    
 }
 
 @layer utilities {
@@ -128,7 +150,11 @@
 
     /* Nav Bar on other pages */
     .navBarHeightMobile {
-        height: clamp(100px, 15%, 125px);
+        height: clamp(100px, 15%, 105px);
+    }
+
+    .navBarPaddingMobile {
+        padding-top: clamp(100px, 15%, 125px);
     }
 
     .homeLinkContainerDesktop {
@@ -237,4 +263,23 @@
         width: clamp(186px, 20%, 267px);
         font-size: clamp(1.2rem, 1.5vw, 1.5rem);
     }
+
+
+
+    /* MyWork - Projects and Demos */
+
+    .projectContainer {
+        width: clamp( 855px, 90%, 1641px);
+    }
+
+    .projectImageContainer {
+        width: clamp(400px, 25%, 547px);
+        aspect-ratio: auto;
+    }
+
+
+    .repoAndSiteLinks {
+        width: clamp(310px, 45%, 400px);
+    }
+
 }

@@ -4,9 +4,18 @@ export default {
   theme: {
     extend: {
         backgroundImage: {
-          'projectsButton': "url('./src/assets/Images/SiteForBG.jpg')",
 
           'contactButton': "url('./src/assets/Images/emailBG.jpg')",
+
+          'sunsetOne': "url('./src/assets/Images/Moms_Sunset_Photo.jpg')",
+
+          'sunsetTwo': "url('./src/assets/Images/Moms_Sunset_Photo_2.jpg')",
+
+          'sunsetThree': "url('./src/assets/Images/Moms_Sunset_Photo_3.jpg')",
+
+          'sunsetComboLandscape': "url('./src/assets/Images/Moms_Sunset_Photos_Combined_Landscape.png')",
+
+          'sunsetComboPortrait': "url('./src/assets/Images/Moms_Sunset_Photos_Combined_Portrait.png')",
         }
     },
   },

@@ -12,7 +12,7 @@ export const Contact = (): JSX.Element => {
             `}
         >
             
-            <NavBar link2='/Projects' />
+            <NavBar link2='/MyWork' />
 
             <section
                 className={`

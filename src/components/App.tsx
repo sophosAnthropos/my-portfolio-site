@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { useWindowResize } from '../hooks/Window_Resize_Hook';
 import { Home } from './Pages/01_Home';
-import { Projects } from './Pages/02_Project';
+import { MyWork } from './Pages/02_My_Work';
 import { Contact } from './Pages/03_Contact';
 import backgroundMobile from '../assets/Images/00_backgroundPortrait_V2.png'
 import backgroundDesktop from '../assets/Images/backgroundLandscape_V2.png'
@@ -21,7 +21,7 @@ export const App = (): JSX.Element => {
                     src={backgroundMobile} 
                     alt="" 
                     className={`
-                        w-full h-full absolute z-[310]
+                        w-full h-full fixed z-[310]
                     `}
                 />
             )
@@ -32,7 +32,7 @@ export const App = (): JSX.Element => {
                     src={backgroundDesktop} 
                     alt="" 
                     className={`
-                        w-full h-full absolute z-[310]
+                        w-full h-full fixed z-[310]
                     `}
                 />
             )
@@ -44,21 +44,21 @@ export const App = (): JSX.Element => {
     return (
         <div
             className={`
-                w-full h-full bg-gradient-to-tr from-yellow-600 to-violet-600 relative z-[300]
-                sm:appContainerDesktop
+                w-full h-full bg-gradient-to-tr from-yellow-600 to-violet-600 relative z-[300] overflow-hidden
+                sm:h-auto sm:appContainerDesktop
             `}
         >
             {background}
             
             <Routes>
               <Route path='/' element={<Home />} />
-              <Route path='/Projects' element={<Projects />} />
+              <Route path='/MyWork' element={<MyWork />} />
               <Route path='/Contact' element={<Contact />} />
             </Routes>
 
             <footer
                 className={`
-                    w-full h-[3.5%] absolute bottom-0 z-[420] 
+                    w-full h-[25px] relative z-[420] 
                     bg-neutral-800
 
                     sm:h-[4%]

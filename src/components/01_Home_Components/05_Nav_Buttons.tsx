@@ -20,7 +20,7 @@ export const NavButtons = (): JSX.Element => {
                         `}
                     >
                         <Link 
-                            to="/Projects" 
+                            to="/MyWork" 
                             className={`
                                 w-full h-3/4
 
@@ -41,7 +41,7 @@ export const NavButtons = (): JSX.Element => {
                                         sm:w-2/5
                                     `}
                                 >
-                                    Projects
+                                    My Work
                                 </p>
                                 <img 
                                     src={codingImg} 
