@@ -1,16 +1,16 @@
 
 
 export const MobileWorksComponent = (
-    {worksName, desktopImage, mobileImage, headerWidth, children, lastChild, codeRepo, siteURL}: 
+    {worksName, desktopImage, mobileImage, headerLength, children, codeRepo, siteURL, workDescription}: 
     {
         worksName: string, 
         desktopImage: string, 
         mobileImage: string, 
-        headerWidth: string, 
+        headerLength: string, 
         children: JSX.Element[],
-        lastChild: boolean,
         codeRepo: string,
-        siteURL: string
+        siteURL: string,
+        workDescription: string
     }
 ):JSX.Element => {
 
@@ -27,8 +27,8 @@ export const MobileWorksComponent = (
                 >
                     <h3
                         className={`
-                            ${headerWidth} h-[50px] flex justify-center items-center ml-2
-                            techText font-bold text-sky-50 ${headerWidth === "w-full" ? "text-xl" : "text-2xl"}
+                            w-full h-[50px] flex justify-start items-center ml-2
+                            techText font-bold text-sky-50 ${headerLength === "long" ? "text-xl" : "text-2xl"}
                         `}
                     >
                         {worksName}
@@ -61,17 +61,17 @@ export const MobileWorksComponent = (
                     </div>
                     <div
                         className={`
-                            w-full px-3 my-3 mainText text-sky-50 flex flex-col items-center
+                            w-full px-3 my-3 mainText text-sky-50 flex flex-col items-center tracking-wide
                         `}
                     >
                         {worksName === "CK Dev" ? children :
                             <>
                                 <p
                                     className={`
-                                        w-full h-[150px] text-justify
+                                        w-full h-auto pb-[20px]
                                     `}
                                 >
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quia optio tempora at sunt excepturi dolorum illum ipsam commodi. Nemo pariatur molestias soluta? Recusandae similique consequuntur sequi unde? Corporis, veritatis!
+                                    {workDescription}
                                 </p>
                                 <div
                                     className={`
@@ -80,6 +80,8 @@ export const MobileWorksComponent = (
                                 >
                                     <a 
                                         href={codeRepo}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
                                         className={`
                                             w-[45%] h-full flex justify-center items-center
                                             text-orange-600 bg-neutral-700 tracking-wide font-bold 
@@ -88,6 +90,8 @@ export const MobileWorksComponent = (
                                     >VIEW CODE</a>
                                     <a 
                                         href={siteURL}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
                                         className={`
                                             w-[45%] h-full flex justify-center items-center
                                             text-sky-400 bg-neutral-700 tracking-wide font-bold 

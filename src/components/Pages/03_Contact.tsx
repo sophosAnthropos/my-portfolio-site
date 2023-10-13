@@ -3,6 +3,9 @@ import { TheForm } from "../03_Contact_Components/01_Contact_Form"
 
 export const Contact = (): JSX.Element => {
 
+    window.scrollTo({top: 0})
+
+
     return (
         <main 
             className={`
@@ -16,9 +19,10 @@ export const Contact = (): JSX.Element => {
 
             <section
                 className={`
-                    w-full h-[96.5%]
+                    w-full h-[87%]
                     flex items-end
-                    sm:h-[94%] sm:flex sm:justify-center sm:items-end
+
+                    sm:h-[94%] sm:items-center sm:justify-center
                 `}
             >
 

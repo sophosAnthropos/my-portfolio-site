@@ -8,7 +8,7 @@ export const OpenAboutMeBtn = () => {
         <button
             onClick={()=>setAboutState(true)}
             className={`
-                w-[85px] h-[105px] absolute top-[35%] right-0 z-[410]
+                w-[85px] h-[105px] absolute top-[35%] right-0 z-[329]
                 sm:w-[140px] sm:h-[18%] sm:top-[15%]
             `}
         >

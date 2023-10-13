@@ -1,11 +1,11 @@
-import logo from "../../../assets/Images/Placeholder_Logo_V2.png";
+import logo from "../../../assets/Images/First_Real_Logo.png";
 
 export const NameAndLogoMobile = (): JSX.Element => {
 
     return (
         <section
             className={`
-                h-[70%] flex items-end relative text-3xl techText text-cyan-400
+                w-full h-[70%] flex items-end relative text-3xl techText text-cyan-400
             `}
         >
             <header
@@ -15,7 +15,7 @@ export const NameAndLogoMobile = (): JSX.Element => {
             >
                 <h1
                     className={`
-                        h-full flex justify-end items-end font-bold
+                       w-full h-full flex justify-center items-end font-bold
 
                     `}
                 >

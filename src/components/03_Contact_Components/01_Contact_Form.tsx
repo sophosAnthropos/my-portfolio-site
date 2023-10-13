@@ -23,7 +23,7 @@ export const TheForm = () => {
     return (
         <form onSubmit={sendEmail}
             className={`
-                w-full h-4/5 relative
+                w-full h-[92%] relative
                 grid grid-cols-1 justify-items-center
                 techText
 
@@ -83,7 +83,7 @@ export const TheForm = () => {
                     w-full h-full row-span-1
                     bg-gray-600 bg-opacity-40 
                     text-xl text-cyan-300
-                    border-y-2 border-cyan-300
+                    border-2 border-cyan-300
                     transition ease-linear submitButtonActiveEffect duration-[10ms]
                     
                     sm:formSubmitBtn sm:col-span-1 sm:row-span-2 
@@ -101,8 +101,8 @@ export const TheForm = () => {
 
             <div
                 className={`
-                     absolute top-[-6%] right-[5%] 
-                     inputPlaceholderRequiredColor font-bold
+                    absolute top-[-6%] right-[5%] 
+                    inputPlaceholderRequiredColor font-bold
 
                     sm:formLegendWrapper sm:h-[10%] sm:top-[-5%] sm:left-[7%]
                     sm:flex sm:justify-center sm:items-center

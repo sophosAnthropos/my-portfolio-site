@@ -29,9 +29,9 @@ export const Home = (): JSX.Element => {
     return (
         <main
             className={`
-                w-full h-[100vmax] relative z-[400] flex flex-col justify-around
+                w-full h-[100vmax] relative z-[320] flex flex-col justify-around
                 
-                sm:landingContainerDesktop sm:h-[100vh] sm:flex sm:flex-col sm:justify-center sm:items-center 
+                sm:landingContainerDesktop sm:h-[100vh] sm:flex sm:flex-col sm:justify-center sm:items-center
             `}
         >
                 <AboutMeStateContextProvider>
@@ -41,8 +41,8 @@ export const Home = (): JSX.Element => {
 
                 <div
                     className={`
-                        w-full h-[45%] 
-                        sm:h-[40%] sm:flex sm:flex-col sm:justify-around sm:items-center
+                        w-full h-[45%]
+                        sm:w-4/5 sm:h-[40%] sm:flex sm:flex-col sm:justify-around sm:items-center
                     `}
                 >
                     {nameLogoComponent}

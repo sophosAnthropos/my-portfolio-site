@@ -1,12 +1,12 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
-import logo from "../../assets/Images/Placeholder_Logo_V2.png"
+import logo from "../../assets/Images/First_Real_Logo.png"
 import codingImg from "../../assets/Images/codingImage.png"
 import emailImg from "../../assets/Images/emailImage.png"
 import githubLogo from "../../assets/Images/GithubLogo.png";
 import linkdinLogo from "../../assets/Images/LinkdinLogo.png";
 import resumeLogo from "../../assets/Images/ResumeLogo.png";
-import myResume from "../../assets/PDF/WebDevResume_2022.pdf";
+import myResume from "../../assets/PDF/WebDevResume_2023.pdf";
 
 
 export const NavBar = ({link2}: {link2:string}): JSX.Element => {
@@ -18,10 +18,10 @@ export const NavBar = ({link2}: {link2:string}): JSX.Element => {
     return (
         <nav
             className={`
-                w-full h-[100px] relative top-0 z-[420]
+                w-full h-[8vh] relative top-0 z-[420]
                 flex justify-end
 
-                sm:h-[16%] sm:justify-between sm:items-center
+                sm:h-[140px] sm:justify-between sm:items-center
             `}
         >
 
@@ -31,7 +31,7 @@ export const NavBar = ({link2}: {link2:string}): JSX.Element => {
                     w-[30%] fixed top-[-1%] z-[421]
                     border-r-2 border-b-2 rounded-br-full rounded-bl-full border-orange-500
 
-                    ${hamburgerState ? "h-[60px] left-[-11%]" : "w-[100%] h-[40px] left-0 rounded-br-none rounded-bl-none fa-solid fa-times border-r-0 border-neutral-200"}
+                    ${hamburgerState ? "h-[60px] left-[-11%]" : "w-full h-[40px] left-0 rounded-br-none rounded-bl-none fa-solid fa-times border-r-0 border-neutral-200"}
 
                     bg-neutral-50 text-orange-500 text-xl
 
@@ -43,8 +43,7 @@ export const NavBar = ({link2}: {link2:string}): JSX.Element => {
                         fa-solid fa-bars absolute bottom-[30%] right-[30%]
                         ${hamburgerState ? "inline" : "hidden"}
                     `}
-                >
-                </span>
+                ></span>
             </button>
 
             <section
@@ -55,6 +54,7 @@ export const NavBar = ({link2}: {link2:string}): JSX.Element => {
                     
                     sm:w-[65%] sm:relative sm:h-full sm:flex sm:justify-around sm:items-center
                 `}
+                onClick={()=>setHamState(true)}
             >
 
                 <Link 
@@ -63,7 +63,7 @@ export const NavBar = ({link2}: {link2:string}): JSX.Element => {
                         w-full h-[120px]
                         ${hamburgerState ? "hidden" : " flex justify-center items-center bg-neutral-50 border-b-2"}
 
-                        sm:w-[30%] sm:h-1/2 sm:flex sm:justify-center sm:items-center
+                        sm:w-[300px] sm:h-full sm:flex sm:justify-center sm:items-center 
                         
                     `} 
                 >
@@ -71,7 +71,7 @@ export const NavBar = ({link2}: {link2:string}): JSX.Element => {
                         src={logo} 
                         className={`
                             h-[55%] aspect-auto
-                            sm:w-1/2
+                            sm:homeLinkLogoDesktop
                         `}
                     />
                     <h2
@@ -79,7 +79,7 @@ export const NavBar = ({link2}: {link2:string}): JSX.Element => {
                             w-1/3 h-1/2 flex items-center justify-center
                             mainText text-lg
 
-                            sm:text-white
+                            sm:text-white sm:homeLinkH2Desktop
                         `}
                     >
                         HOME
@@ -93,7 +93,7 @@ export const NavBar = ({link2}: {link2:string}): JSX.Element => {
                         
                         ${hamburgerState ? "hidden" : " flex justify-center items-center bg-neutral-50 border-orange-500 border-b-4"}
 
-                        sm:w-[30%] sm:h-3/4 sm:flex sm:justify-center sm:items-center
+                        sm:w-[285px] sm:h-full sm:flex sm:justify-center sm:items-center
                                          
                     `} 
                 >
@@ -111,7 +111,7 @@ export const NavBar = ({link2}: {link2:string}): JSX.Element => {
                     <h2
                         className={`
                             w-1/3 h-1/2 flex items-center justify-center mainText text-lg
-                            sm:w-[35%] sm:navItemText sm:text-white
+                            sm:navItemH2 sm:text-white
                         `}
                     >
                         {navItem}
@@ -136,6 +136,8 @@ export const NavBar = ({link2}: {link2:string}): JSX.Element => {
                 >
                     <a 
                         href="https://github.com/sophosAnthropos"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className={`
                             w-1/3 h-full flex justify-center items-center 
                         
@@ -162,6 +164,8 @@ export const NavBar = ({link2}: {link2:string}): JSX.Element => {
 
                     <a 
                         href="https://www.linkedin.com/in/christopher-krause-534a69255/"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className={`
                             w-1/3 h-full flex justify-center items-center 
                         
@@ -188,6 +192,8 @@ export const NavBar = ({link2}: {link2:string}): JSX.Element => {
 
                     <a 
                         href={myResume}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className={`
                             w-1/3 h-full flex justify-center items-center 
                         

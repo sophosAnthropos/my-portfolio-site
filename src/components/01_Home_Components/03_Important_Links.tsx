@@ -1,7 +1,7 @@
 import githubLogo from "../../assets/Images/GithubLogo.png";
 import linkdinLogo from "../../assets/Images/LinkdinLogo.png";
 import resumeLogo from "../../assets/Images/ResumeLogo.png";
-import myResume from "../../assets/PDF/WebDevResume_2022.pdf";
+import myResume from "../../assets/PDF/WebDevResume_2023.pdf";
 
 export const ImportantLinks = (): JSX.Element => {
 
@@ -23,6 +23,8 @@ export const ImportantLinks = (): JSX.Element => {
             >
                 <a 
                     href="https://github.com/sophosAnthropos"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className={`
                         w-full h-full flex justify-evenly items-center
 
@@ -49,6 +51,8 @@ export const ImportantLinks = (): JSX.Element => {
             >
                 <a 
                     href="https://www.linkedin.com/in/christopher-krause-534a69255/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className={`
                         w-full h-full flex justify-evenly items-center
 
@@ -74,6 +78,8 @@ export const ImportantLinks = (): JSX.Element => {
             >
                 <a 
                     href={myResume}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className={`
                         w-full h-full flex justify-evenly items-center
 

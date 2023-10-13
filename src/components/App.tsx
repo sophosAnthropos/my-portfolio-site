@@ -32,7 +32,7 @@ export const App = (): JSX.Element => {
                     src={backgroundDesktop} 
                     alt="" 
                     className={`
-                        w-full h-full fixed z-[310]
+                        landingContainerDesktop h-full fixed z-[310]
                     `}
                 />
             )
@@ -44,8 +44,10 @@ export const App = (): JSX.Element => {
     return (
         <div
             className={`
-                w-full h-full bg-gradient-to-tr from-yellow-600 to-violet-600 relative z-[300] overflow-hidden
-                sm:h-auto sm:appContainerDesktop
+                w-full h-full bg-gradient-to-tr from-yellow-600 to-violet-600 
+                relative z-[300] overflow-hidden
+
+                sm:appContainerDesktop
             `}
         >
             {background}
@@ -58,10 +60,10 @@ export const App = (): JSX.Element => {
 
             <footer
                 className={`
-                    w-full h-[25px] relative z-[420] 
+                    w-full h-[30px] absolute bottom-0 z-[311]
                     bg-neutral-800
 
-                    sm:h-[4%]
+                    
                     
                 `}
             >

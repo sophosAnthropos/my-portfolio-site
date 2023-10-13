@@ -71,12 +71,12 @@
     }
 
     .logoContainerDesktop {
-        width: clamp(350px, 30vw, 500px);
+        width: clamp(350px, 30%, 500px);
     }
 
     .logoDesktop {
         aspect-ratio: auto;
-        width: clamp(350px, 30vw, 400px);
+        width: clamp(200px, 19vw, 260px);
     }
 
     .titleTextDesktop {
@@ -162,7 +162,12 @@
     }
 
     .homeLinkLogoDesktop {
-        width: clamp(150px, 60%, 200px);
+        height: clamp(90px, 9vmax, 130px);
+    }
+
+    .homeLinkH2Desktop {
+        width: clamp(100px, 2vw, 130px);
+        font-size: clamp(1.4rem, 2.1vw, 1.875rem);
     }
 
     .navItemImageProjects {
@@ -170,11 +175,12 @@
     }
 
     .navItemImageContact {
-        height: clamp(90px, 7.5vmax, 120px);
+        height: clamp(90px, 8.4vmax, 120px);
     }
 
-    .navItemText {
-        font-size: clamp(1.4rem, 2vw, 1.7rem);
+    .navItemH2 {
+        width: 145px;
+        font-size: clamp(1.4rem, 2.1vw, 1.875rem);
     }
 
     .linksSectionWrapper {
@@ -268,13 +274,25 @@
 
     /* MyWork - Projects and Demos */
 
-    .projectContainer {
+    .worksContainerShort { 
+        /* Used when descriptions are short. Text naturally wont overflow at viewport widths below 1000px */
         width: clamp( 855px, 90%, 1641px);
+        height: 600px;
+    }
+
+    .worksContainerLong {
+        /* Used when descriptions are lengthy. Prevents text overflow at viewport widths below 1000px */
+        width: clamp(855px, 90%, 1641px);
+        height: calc(1000px - 20vw);
     }
 
     .projectImageContainer {
-        width: clamp(400px, 25%, 547px);
+        width: clamp(400px, 90%, 547px);
         aspect-ratio: auto;
+    }
+
+    .worksLinksContainer {
+        height: clamp(75px, 8vmax, 110px);
     }
 
 
@@ -282,4 +300,8 @@
         width: clamp(310px, 45%, 400px);
     }
 
+
+    .backToTopBtnDesktop {
+        width: clamp(60px, 5%, 100px);
+    }
 }

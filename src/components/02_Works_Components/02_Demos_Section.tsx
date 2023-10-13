@@ -6,6 +6,8 @@ import { WorksComponentsDesktop } from "../00_Resuable_Components/03_Works_Deskt
 
 export const DemosSection = ():JSX.Element => {
     const {width, } = useWindowResize()
+    
+    let healthCareDemoDescription: string = " Due to my passion for mental healthcare, this demo was the 2nd work I produced. Unlike the preceding project, this isn't logic intensive, but is instead about providing an imagined client with their wants and needs. The style preferences of the client  combined with the thought processes of the target demographic illustrates a consistency of communication and consultation. Given the demographic the client is wanting to retain, we settled on a soothing feminine color pallet and non-abrasive typefaces. I created the layout from the perspective of the to be patients who will use the site. Through investigative study of other works I was able to avoid creating a site similar to those with overwhelming & crowded landing page or confusing nonlinear navigation."
 
     return (
         <section
@@ -34,10 +36,10 @@ export const DemosSection = ():JSX.Element => {
                         worksName="Mental Healthcare Demo Site" 
                         desktopImage={desktopMentalHealthcareDemoSiteImages} 
                         mobileImage={mobileMentalHealthcareDemoSiteImages} 
-                        headerWidth="w-full"
-                        lastChild={true}
+                        headerLength="long"
                         codeRepo="https://github.com/sophosAnthropos/Mental_Healthcare_Site_Demo"
                         siteURL="https://sophosanthropos.github.io/Mental_Healthcare_Site_Demo/"
+                        workDescription={healthCareDemoDescription}
                     >
                     </MobileWorksComponent>
                 : 
@@ -48,6 +50,7 @@ export const DemosSection = ():JSX.Element => {
                         lastChild={true}
                         codeRepo="https://github.com/sophosAnthropos/Mental_Healthcare_Site_Demo"
                         siteURL="https://sophosanthropos.github.io/Mental_Healthcare_Site_Demo/"
+                        workDescription={healthCareDemoDescription}
                     >
                     </WorksComponentsDesktop>
             }

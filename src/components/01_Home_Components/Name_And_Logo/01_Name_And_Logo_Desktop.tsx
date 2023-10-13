@@ -1,11 +1,11 @@
-import logo from "../../../assets/Images/Placeholder_Logo_V2.png";
+import logo from "../../../assets/Images/First_Real_Logo.png";
 
 export const NameAndLogoDesktop = (): JSX.Element => {
 
     return (
         <section
             className={`
-                w-full h-[60%] flex items-center justify-around techText text-cyan-400 nameTextDesktop
+                w-full h-[75%] flex items-center justify-around techText text-cyan-400 nameTextDesktop
             `}
         >
             <header
@@ -25,7 +25,7 @@ export const NameAndLogoDesktop = (): JSX.Element => {
 
             <div
                 className={`
-                    logoContainerDesktop flex justify-center items-center px-[15px]
+                    w-[350px] flex justify-center items-center px-[15px]
                 `}
             >
                 <img 
